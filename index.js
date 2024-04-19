@@ -4,7 +4,7 @@ const cors = require('cors');//connecting crosss origin
 const app = express();
 const port = process.env.PORT || 5000;
 //connecting with  mongodb compass 
-mongoose.connect('mongodb://127.0.0.1:27017/Thindal')
+mongoose.connect('mongodb+srv://drguru750:8858@lakshmigarden.ony18xo.mongodb.net/?retryWrites=true&w=majority&appName=lakshmigarden')
     //connectivity string =adress+data
     .then(() => {
         console.log('Connected to vcet database');
