@@ -25,8 +25,8 @@ app.use(cors());
 app.post('/posting', async (req, resp) => {
     try {
         const user = new Collections(req.body);
-        const result = await user.save();
-        const datasending = result.toObject();
+        const results = await user.save();
+        const datasending = results.toObject();
         //text string
         // converting all datas to obj
         resp.send(datasending);
